@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to the .NET Core documentation!
 
-In this topic, you'll see the basic process for adding or updating content in the [.Net Core documentation site](https://docs.microsoft.com/en-us/dotnet/core/).
+In this topic, you'll see the basic process for adding or updating content in the [.Net Core documentation site](https://docs.microsoft.com/dotnet/core/).
 
 In this topic, we'll cover:
 
@@ -52,7 +52,7 @@ The Visual Studio team will review your PR and let you know if the change looks 
 
 The maintainers will merge your PR into the master branch once feedback has been applied and your change looks good.
 
-On a certain cadence, we push all commits from master branch into the live branch and then you'll be able to see your contribution live on [docs.microsoft.com](https://docs.microsoft.com/cpp/).
+On a certain cadence, we push all commits from master branch into the live branch and then you'll be able to see your contribution live on [docs.microsoft.com](https://docs.microsoft.com/dotnet/core/).
 
 ## DOs and DON'Ts
 
@@ -66,7 +66,7 @@ Below is a short list of guiding rules that you should keep in mind when you are
 - **DO** blog and tweet (or whatever) about your contributions, frequently!
 
 > [!NOTE]
-> You might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/MicrosoftDocs/cpp-docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal.
+> You might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/MicrosoftDocs/core-docs.pt-BR/issues) we're currently tracking for that specific goal.
 
 ## Building the docs
 
@@ -77,14 +77,6 @@ If you want to build the docs locally, you need to install [DocFX](https://dotne
 There are several ways to use DocFX, and most of them are covered in the [DocFX getting started guide](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html). The following instructions use the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tool. If you are comfortable with other ways listed on the link above, feel free to use those.
 
 **Note:** Currently DocFX requires the .NET Framework on Windows or Mono (for Linux or macOS). We hope to port it to .NET Core in the future.
-
-You can build and preview the resulting site locally using a built-in web server. Navigate to the `cpp-docs\docs` folder on your machine and type the following command:
-
-> docfx -t default --serve
-
-This starts the local preview on [localhost:8080](http://localhost:8080). You can then view the changes by going to `http://localhost:8080/[path]`, such as `http://localhost:8080/cpp/visual-cpp-in-visual-studio.html`.
-
-**Note:** the local preview currently doesn't contain any themes at the moment so the look and feel won't be the same as in the documentation site. We're working towards fixing that experience. We also use some custom extensions for embedded video, notes, and included documents, that won't be visible in the preview.
 
 ## Contributing to samples
 
